@@ -3,6 +3,7 @@ body{
     background-color: rgb(250,248,239);
     margin: 0;
     padding: 0;
+    overscroll-behavior: contain;
 }
 
 .titleContainer{
