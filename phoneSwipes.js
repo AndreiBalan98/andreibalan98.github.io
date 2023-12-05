@@ -28,15 +28,15 @@ function handleTouchMove(evt) {
                                                                          
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
         if ( xDiff > 0 ) {
-            fArrowRight();
-        } else {
             fArrowLeft();
+        } else {
+            fArrowRight();
         }                       
     } else {
         if ( yDiff > 0 ) {
-            fArrowDown(); 
-        } else { 
             fArrowUp();
+        } else { 
+            fArrowDown();
         }                                                                 
     }
     /* reset values */
