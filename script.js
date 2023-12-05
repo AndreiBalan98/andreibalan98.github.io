@@ -10,7 +10,7 @@ const tableContent = [
 function resetButton(){
 
     document.getElementsByClassName("resetButton")[0].innerHTML = "RESET";
-    
+
     resetValues();
     addNumbersToTable(2);
     addScore();
@@ -146,40 +146,28 @@ function arrowKeysHandle(event){
 
         case "ArrowUp":
             a = performance.now();
-            upMove();
-            addNumbersToTable(1);
-            addScore();
-            toDisplay();
+            fArrowUp();
             b = performance.now();
             // console.log(b - a);
             break;
 
         case "ArrowDown":
             a = performance.now();
-            downMove();
-            addNumbersToTable(1);
-            addScore();
-            toDisplay();
+            fArrowDown();
             b = performance.now();
             // console.log(b - a);
             break;
             
         case "ArrowLeft":
             a = performance.now();
-            leftMove();
-            addNumbersToTable(1);
-            addScore();
-            toDisplay();
+            fArrowLeft();
             b = performance.now();
             // console.log(b - a);
             break;
 
         case "ArrowRight":
             a = performance.now();
-            rightMove();
-            addNumbersToTable(1);
-            addScore();
-            toDisplay();
+            fArrowRight();
             b = performance.now();
             // console.log(b - a);
             break;
@@ -198,6 +186,38 @@ function arrowKeysHandle(event){
             // console.log(b - a);
             break;
     }
+}
+
+function fArrowUp(){
+
+    upMove();
+    addNumbersToTable(1);
+    addScore();
+    toDisplay();
+}
+
+function fArrowDown(){
+
+    downMove();
+    addNumbersToTable(1);
+    addScore();
+    toDisplay();
+}
+
+function fArrowLeft(){
+
+    leftMove();
+    addNumbersToTable(1);
+    addScore();
+    toDisplay();
+}
+
+function fArrowRight(){
+
+    rightMove();
+    addNumbersToTable(1);
+    addScore();
+    toDisplay();
 }
 
 function leftMove(){
