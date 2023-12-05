@@ -1,5 +1,14 @@
 document.addEventListener('touchstart', handleTouchStart, false);        
 document.addEventListener('touchmove', handleTouchMove, false);
+document.addEventListener('touchmove', preventRefresh);
+
+function preventRefresh(event) {
+    // Check if the user is swiping down (negative deltaY)
+    if (event.touches[0].clientY > 0 && event.touches[0].clientY < 10) {
+      // Prevent the default refresh behavior
+      event.preventDefault();
+    }
+}
 
 var xDown = null;                                                        
 var yDown = null;
