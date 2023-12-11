@@ -26,14 +26,29 @@ body{
 #navBar > #nbInstaLogo{
 
     position: relative;
-    top: -5vh;
+    top: -4.25vh;
     width: 3.5vh;
     height: 3.5vh;
-    margin: 0.75vh;
-    margin-left: auto;
+    margin: 0vh 1.25vh 0vh auto;
     background-image: url(./imagesStefania/instaLogo2white.svg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
+}
+
+#navBar > #nbHomeLogo{
+
+    opacity: 0;
+    position: relative;
+    top: -7.75vh;
+    width: 3.5vh;
+    height: 3.5vh;
+    margin: 0vh auto 0vh 1vh;
+    background-image: url(./imagesStefania/homeLogo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: opacity 1s linear;
 }
 
 #topBackground{
